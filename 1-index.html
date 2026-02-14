@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Au - Marketing Student</title>
+    <style>
+        /* 极简现代风格，完全响应式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1e2b3c;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -10px rgba(0,20,30,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: #0f2b3d;
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+        header .sub {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        header .tag {
+            font-size: 1rem;
+            background: #2a4b66;
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-weight: 400;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .sidebar {
+            border-right: 1px solid #dde7f0;
+            padding-right: 2rem;
+        }
+        .main {
+            padding-left: 0.5rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0f2b3d;
+            border-bottom: 2px solid #e1eaf1;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background: #e7f0f9;
+            color: #0f2b3d;
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .item {
+            margin-bottom: 1.5rem;
+        }
+        .item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f2b3d;
+        }
+        .item .meta {
+            color: #4f6f8f;
+            font-size: 0.9rem;
+            margin: 0.2rem 0 0.5rem;
+        }
+        .item ul {
+            list-style: disc;
+            padding-left: 1.3rem;
+            color: #2c3e50;
+        }
+        .item li {
+            margin-bottom: 0.3rem;
+        }
+        .interest-badge {
+            background: #eef3f8;
+            display: inline-block;
+            padding: 0.3rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .sidebar {
+                border-right: none;
+                padding-right: 0;
+            }
+            header h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Alan Au</h1>
+        <div class="sub">Marketing Major · CUHK Business School</div>
+        <div class="tag">Final Year · Integrated BBA</div>
+    </header>
+
+    <div class="grid">
+        <!-- 左侧栏 -->
+        <div class="sidebar">
+            <div class="section">
+                <h2>📬 Contact</h2>
+                <div class="contact-item">📧 alan.au@example.com</div>
+                <div class="contact-item">📱 +852 9876 5432</div>
+                <div class="contact-item">📍 Hong Kong</div>
+                <div class="contact-item">🔗 linkedin.com/in/alanau-cuhk</div>
+            </div>
+
+            <div class="section">
+                <h2>🧠 Skills</h2>
+                <div class="skill-tags">
+                    <span class="skill-tag">Market Research</span>
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">Social Media Strategy</span>
+                    <span class="skill-tag">Google Analytics</span>
+                    <span class="skill-tag">Content Creation</span>
+                    <span class="skill-tag">Photoshop</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Project Management</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🗣️ Languages</h2>
+                <div class="contact-item">🇭🇰 Cantonese · Native</div>
+                <div class="contact-item">🇬🇧 English · Fluent (IELTS 7.5)</div>
+                <div class="contact-item">🇨🇳 Mandarin · Fluent</div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Interests</h2>
+                <span class="interest-badge">Photography</span>
+                <span class="interest-badge">Travel</span>
+                <span class="interest-badge">Coffee Culture</span>
+                <span class="interest-badge">Reading</span>
+            </div>
+        </div>
+
+        <!-- 右侧主内容 -->
+        <div class="main">
+            <div class="section">
+                <h2>📄 Profile</h2>
+                <p>Motivated marketing student in my final year at CUHK, with a solid foundation in consumer behavior and brand management. Through internships and projects, I have developed hands-on skills in digital campaign execution, social media analytics, and market research. Eager to apply data-driven creativity to real-world marketing challenges.</p>
+            </div>
+
+            <div class="section">
+                <h2>💼 Internships</h2>
+                <div class="item">
+                    <h3>Digital Marketing Intern</h3>
+                    <div class="meta">ABC Marketing Consultancy · Jun 2025 – Aug 2025</div>
+                    <ul>
+                        <li>Assisted in planning social media campaigns (Instagram, Facebook) that boosted brand exposure by 30%.</li>
+                        <li>Analyzed engagement metrics and provided weekly optimization reports.</li>
+                        <li>Conducted competitor research to support strategy development.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Marketing Assistant (Part-time)</h3>
+                    <div class="meta">XYZ Tech Limited · Sep 2024 – May 2025</div>
+                    <ul>
+                        <li>Managed content updates for official website and social channels.</li>
+                        <li>Coordinated offline promotional events with 200+ attendees.</li>
+                        <li>Maintained customer database and analyzed feedback for service improvement.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📚 Projects</h2>
+                <div class="item">
+                    <h3>Campus Marketing Challenge – Team Champion</h3>
+                    <div class="meta">Jan 2025 – Apr 2025</div>
+                    <ul>
+                        <li>Led a team of 4 to design an integrated marketing plan for a local coffee brand.</li>
+                        <li>Conducted consumer surveys and proposed a "Coffee + Culture Experience" positioning.</li>
+                        <li>Presented the strategy to a panel of industry judges and won first place.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Personal Instagram Project</h3>
+                    <div class="meta">2024 – Present</div>
+                    <ul>
+                        <li>Grew a photography account to 3,000+ followers by curating visual content.</li>
+                        <li>Experimented with content timing and hashtags to maintain 5% engagement rate.</li>
+                        <li>Collaborated with small local brands for cross-promotion.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎓 Education</h2>
+                <div class="item">
+                    <h3>The Chinese University of Hong Kong (CUHK)</h3>
+                    <div class="meta">Integrated BBA in Marketing · 2023 – 2027</div>
+                    <ul>
+                        <li>Relevant coursework: Consumer Behavior, Digital Marketing, Brand Management, Market Research.</li>
+                        <li>GPA: 3.6/4.0 · Dean's List 2024–25.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
